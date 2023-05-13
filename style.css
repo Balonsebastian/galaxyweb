@@ -1,0 +1,203 @@
+@font-face {
+  font-family: roboto;
+  src: url(Roboto.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: roboto;
+  background: #333;
+  margin: 0;
+}
+nav {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100vh;
+  z-index: 100;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 3vh;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.1em;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+.bg {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url(img/bg.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  height: 70%;
+  width: 90%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kolom {
+  margin: 10px;
+  width: 28%;
+  height: 85%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+.kolom:hover {
+  width: 30%;
+  height: 100%;
+}
+.kolom:hover img {
+  transform: rotate(40deg);
+}
+
+.kolom .atas img {
+  width: 50%;
+  transition: 3s;
+}
+
+.kolom .atas {
+  width: 100%;
+  height: 60%;
+  background: #40739e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kolom .tengha {
+  width: 100%;
+  height: 10%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.kolom .bawah {
+  width: 100%;
+  height: 30%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kolom .bawah p {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  color: #333;
+}
+
+footer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
+.bgf {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(img/bgf.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentf {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contentf .atas {
+  height: 40%;
+  width: 100%;
+}
+
+.contentf .bawah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 60%;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+input[type="search"] {
+  border-radius: 50px;
+  padding: 2vh 3vh 2vh 3vh;
+  outline: none;
+  border: none;
+  color: #333;
+  width: 45%;
+  height: 35%;
+  font-size: 1.5em;
+  opacity: 0.7;
+}
+
+.title {
+  overflow: hidden;
+  height: 40%;
+  width: 80%;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
+.paragraf {
+  overflow: hidden;
+  height: 60%;
+  width: 80%;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.2em;
+  text-align: center;
+}
